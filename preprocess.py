@@ -12,6 +12,7 @@ import sys
 from typing import List
 
 import preprocessor  # type: ignore
+import nltk  # type: ignore
 from nltk.stem.wordnet import WordNetLemmatizer  # type: ignore
 from nltk.tag import pos_tag  # type: ignore
 from nltk.tokenize import word_tokenize  # type: ignore
@@ -176,6 +177,12 @@ def main() -> int:
     logging.basicConfig(
         level=logging.INFO, format="[%(levelname)s | %(name)s] %(message)s",
     )
+
+    nltk.download("punkt")
+    nltk.download("averaged_perceptron_tagger")
+    nltk.download("wordnet")
+    nltk.download("twitter_samples")
+    nltk.download("stopwords")
 
     preprocess_tweets(args.infile, args.outfile)
 

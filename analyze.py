@@ -100,9 +100,9 @@ def analyze_tweets(tweetin: str, gramin: str, output: str = "") -> None:
                 aspect,
                 count,
                 positive,
-                positive / count,
+                100 * (positive / count),
                 negative,
-                negative / count,
+                100 * (negative / count),
             )
             j += 1
         attempt += 1
@@ -123,9 +123,9 @@ def analyze_tweets(tweetin: str, gramin: str, output: str = "") -> None:
                 aspect,
                 count,
                 positive,
-                positive / count,
+                100 * (positive / count),
                 negative,
-                negative / count,
+                100 * (negative / count),
             )
 
     # Export to .CSV file if specified
@@ -147,8 +147,8 @@ def analyze_tweets(tweetin: str, gramin: str, output: str = "") -> None:
                         aspect.count,
                         aspect.positive,
                         aspect.negative,
-                        aspect.positive / aspect.count,
-                        aspect.negative / aspect.count,
+                        100 * (aspect.positive / aspect.count),
+                        100 * (aspect.negative / aspect.count),
                     ]
                 )
             if counter == REPORT_LIMIT:
