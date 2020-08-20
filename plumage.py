@@ -4,10 +4,10 @@ import argparse
 import logging
 import sys
 
-import modules.extract as extract
-import modules.preprocess as preprocess
-import modules.mine as mine
-import modules.analyze as analyze
+import extract
+import preprocess
+import mine
+import analyze
 
 def main() -> int:
     """Execute main."""
