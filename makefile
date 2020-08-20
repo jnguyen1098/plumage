@@ -4,5 +4,5 @@ QUERY = coronavirus
 COUNT = 10
 
 demo:
-	python3 plumage.py dev/tokeninfo $(QUERY) $(COUNT)
 	rm -rf _extract _preprocess _tweets _grams
+	python3 plumage.py dev/tokeninfo $(QUERY) $(COUNT)
