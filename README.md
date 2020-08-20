@@ -1,2 +1,2 @@
 # Plumage
-This app aims to analyze Twitter Tweets.
+This app performs a sentiment analysis on Twitter posts.
