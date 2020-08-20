@@ -1,0 +1,6 @@
+tokeninfo
+*.swp
+__pycache__
+devmake
+_*
+data/
