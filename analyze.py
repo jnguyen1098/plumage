@@ -173,6 +173,36 @@ class Aspect:
         return self.count < other.count  # type: ignore
 
 
+class Tweet:
+    """Tweet object."""
+
+    def __init__(self, tweet_row: List[str]) -> None:
+        """Initialize Tweet object."""
+        # Existing members
+        self.full_text = tweet_row[0]
+        self.created_at = tweet_row[1]
+        self.source = tweet_row[2]
+        self.tweet_id = tweet_row[3]
+        self.retweet_count = tweet_row[4]
+        self.favorite_count = tweet_row[5]
+        self.user_name = tweet_row[6]
+        self.user_id_str = tweet_row[7]
+        self.user_handle = tweet_row[8]
+        self.user_location = tweet_row[9]
+        self.user_desc = tweet_row[10]
+        self.user_protected = tweet_row[11]
+        self.user_followers = tweet_row[12]
+        self.user_created = tweet_row[13]
+        self.user_verified = tweet_row[14]
+        self.user_tweet_count = tweet_row[15]
+        self.cleaned_text = tweet_row[16]
+        self.cleaned_tokens = json.loads(tweet_row[17])
+
+        self.positivity = -1
+        self.negativity = -1
+        self.difference = -1
+
+
 def main() -> int:
     """Execute standalone."""
     arg_p = argparse.ArgumentParser()
