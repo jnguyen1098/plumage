@@ -5,7 +5,7 @@ This was a research project I did under supervision of a SoCS prof.—you can re
 
 You should probably install the dependencies (`python -m pip install -r requirements.txt`)
 
-You need a file called `tokeninfo` with four lines:
+You need a file in `dev/` called `tokeninfo` containing four lines:
 - Consumer key
 - Consumer secret
 - Access token
