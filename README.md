@@ -12,3 +12,17 @@ You need a file called `tokeninfo` with four lines:
 - Access secret
 
 After this, you can run a demo using the `makefile` by executing `make demo`.
+
+Edit your parameters (including search query) accordingly in the `makefile`.
+
+This project consists of four modules:
+
+- `extract.py` — extracts raw Tweets into
+
+- `preprocess.py` — cleans up the Tweets and prunes any non-promising posts (i.e. too "objective" for analysis)
+
+- `mine.py` — classifies the Tweets and atomizes them into n-gram aspects for analysis
+
+- `analyze.py` — takes the data from `mine.py` and creates a report determining the sentiments from aspects
+
+`plumage.py` is just a demo driver that runs these four modules in sequence.
