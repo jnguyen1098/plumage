@@ -1,7 +1,7 @@
 # Plumage
 This app performs a sentiment analysis on Twitter posts.
 
-This was a research project I did over the summer—you can read the journal [here](https://github.com/jnguyen1098/plumage/blob/master/Quarantine%20Quibbles%20-%20a%20Sentiment%20Analysis%20of%20COVID-19%20Tweets.pdf).
+This was a research project I did over the summer—you can read the journal [here](https://github.com/jnguyen1098/plumage/blob/master/QQuibbles.pdf).
 
 You should probably install the dependencies (`python -m pip install -r requirements.txt`)
 
