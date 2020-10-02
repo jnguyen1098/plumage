@@ -4,6 +4,7 @@
 # pylint: disable=R0915
 # pylint: disable=R0903
 
+#import tensorflow
 import argparse
 import csv
 import logging

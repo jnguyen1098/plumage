@@ -1,5 +1,6 @@
 """Demo module."""
 
+#import tensorflow
 import argparse
 import logging
 import sys
