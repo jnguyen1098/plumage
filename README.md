@@ -1,5 +1,5 @@
 # Plumage
-This app performs a sentiment analysis on Twitter posts.
+This app performs a sentiment analysis on Twitter posts on a given keyword topic.
 
 This was a research project I did over the summer—you can read the journal [here](https://github.com/jnguyen1098/plumage/blob/master/QQuibbles.pdf).
 
