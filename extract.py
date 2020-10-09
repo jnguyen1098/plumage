@@ -1,6 +1,7 @@
 """Extraction module."""
 # pylint: disable=C0330
 
+#import tensorflow
 import argparse
 import csv
 import logging
