@@ -25,4 +25,4 @@ This project consists of four modules:
 
 - `analyze.py` — takes the data from `mine.py` and creates a report determining the sentiments from aspects
 
-`plumage.py` is just a demo driver that runs these four modules in sequence.
+`plumage.py` is just a demo driver that runs these four modules in sequence. To get a more configurable experience, run the other scripts separately and tweak to your desire.
